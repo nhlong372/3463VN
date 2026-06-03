@@ -1,0 +1,74 @@
+/* --- CODE RESPONSIVE CHO CÁC THIẾT BỊ --- */
+
+/* 1. Cấu hình cho Máy tính bảng (Tablet) & Màn hình nhỏ hơn 768px */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px; /* Giảm padding viền ngoài cho rộng chỗ */
+  }
+  .container {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 20px; /* Thu nhỏ tiêu đề */
+  }
+  th,
+  td {
+    padding: 10px 8px; /* Thu nhỏ khoảng cách các ô trong bảng */
+    font-size: 14px;
+  }
+}
+
+/* 2. Cấu hình "Bá đạo" cho Điện thoại (Mobile) dưới 576px */
+/* Biến bảng Table dọc thành các thẻ Card bo góc dễ nhìn, không cần cuộn ngang */
+@media screen and (max-width: 576px) {
+  /* Ẩn dòng tiêu đề của bảng (th) */
+  table thead {
+    display: none;
+  }
+
+  /* Biến các hàng (tr) thành các khối hộp (Card) độc lập */
+  table tr {
+    display: block;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  }
+
+  /* Cấu hình các ô (td) hiển thị theo hàng dọc */
+  table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #edf2f7;
+    padding: 8px 5px;
+    text-align: right;
+  }
+
+  table td:last-child {
+    border-bottom: none; /* Ô cuối không cần gạch dưới */
+  }
+
+  /* Tự động thêm chữ tiêu đề vào trước mỗi nội dung bằng thuộc tính data hoặc custom */
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #718096;
+    text-align: left;
+    font-size: 13px;
+    padding-right: 10px;
+  }
+
+  /* Fix căn giữa cho STT trên mobile */
+  table td:first-child {
+    justify-content: center;
+    background: #f7fafc;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  table td:first-child::before {
+    content: "STT: ";
+  }
+}

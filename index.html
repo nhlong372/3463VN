@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng Hợp Và Tra Cứu Bản Đồ Hành Chính, Biển Số Xe Việt Nam</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Tổng Hợp Và Tra Cứu Bản Đồ Hành Chính, Biển Số Xe Của Các Tỉnh/Thành phố</h1>
+    <div class="subtitle">Dữ liệu đối chiếu bản đồ hành chính và biển số xe trước và sau tinh gọn (Dữ liệu tinh gọn tính từ ngày 01/07/2025)</div>
+
+    <div class="tabs-container">
+        <button class="tab-btn active" id="tabNew" onclick="switchMode('NEW')">Hiện Tại (34 Tỉnh Mới)</button>
+        <button class="tab-btn" id="tabOld" onclick="switchMode('OLD')">Trước Đây (63 Tỉnh Cũ)</button>
+    </div>
+
+    <div class="search-box">
+        <div class="search-group">
+            <label id="lblSearchName" for="searchName">Tìm kiếm tên tỉnh/thành phố:</label>
+            <input type="text" id="searchName" placeholder="Nhập tên tỉnh/thành phố cần tìm...">
+        </div>
+        <div class="search-group">
+            <label for="searchPlate">Tìm theo ký hiệu Biển số xe:</label>
+            <input type="text" id="searchPlate" placeholder="Ví dụ: 88, 59, 48, 29...">
+        </div>
+        <div class="search-group" id="filterTypeGroup">
+            <label for="filterType">Phân loại địa phương:</label>
+            <select id="filterType">
+                <option value="all">-- Tất cả địa phương --</option>
+                <option value="tw">Thành phố Trực thuộc Trung ương</option>
+                <option value="tinh">Các Tỉnh thông thường</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="stats" id="rowCount">Đang tải dữ liệu...</div>
+
+    <div class="table-container">
+        <table id="mainTable">
+            <thead id="tableHeader">
+                </thead>
+            <tbody id="tableBody">
+                </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/function.js"></script>
+
+</body>
+</html>
