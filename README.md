@@ -36,11 +36,11 @@ Giúp bạn lọc nhanh để chỉ hiển thị các Thành phố Trực thuộ
 3. Cách Đọc Dữ Liệu Trên Bảng (Table)
 Để đảm bảo tính tinh tế và không bị rối mắt, hệ thống áp dụng cơ chế hiển thị thông minh:
 
-💡 Ký hiệu — (Không đổi) nghĩa là gì?
+💡 Ký hiệu — (Giữ nguyên) nghĩa là gì?
 
-Ở Tab Mới: Những tỉnh đứng độc lập, không ôm thêm tỉnh khác và giữ nguyên tên gọi (như Hà Nội, Thanh Hóa, Nghệ An...) thì cột sáp nhập sẽ hiện — (Không đổi) thay vì lặp lại tên chính nó.
+Ở Tab Mới: Những tỉnh đứng độc lập, không ôm thêm tỉnh khác và giữ nguyên tên gọi (như Hà Nội, Thanh Hóa, Nghệ An...) thì cột sáp nhập sẽ hiện — (Giữ nguyên) thay vì lặp lại tên chính nó.
 
-Ở Tab Cũ: Những tỉnh cũ không bị sáp nhập đi đâu cả, vẫn giữ nguyên bờ cõi (như An Giang, Bạc Liêu...) thì cột "Hiện tại thuộc về" sẽ hiện — (Không đổi).
+Ở Tab Cũ: Những tỉnh cũ không bị sáp nhập đi đâu cả, vẫn giữ nguyên bờ cõi (như An Giang, Bạc Liêu...) thì cột "Hiện tại thuộc về" sẽ hiện — (Giữ nguyên).
 
 4. Hiển Thị Trên Thiết Bị Di Động (Mobile/Tablet)
 Khi bạn xem trên màn hình máy tính bảng hoặc điện thoại, bảng dữ liệu nằm ngang sẽ tự động chuyển thành dạng các thẻ hộp (Card) dọc bo góc.
