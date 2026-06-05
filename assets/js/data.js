@@ -28,7 +28,7 @@ const dbTinhThanh = [
     { stt: "26", tenMoi: "Cà Mau", isTrungUong: false, tinhCu: [{ ten: "Bạc Liêu", bsg: ["94"], isTrungUongCu: false }, { ten: "Cà Mau", bsg: ["69"], isTrungUongCu: false }] },
     { stt: "27", tenMoi: "Tây Ninh", isTrungUong: false, tinhCu: [{ ten: "Tây Ninh", bsg: ["70"], isTrungUongCu: false }, { ten: "Long An", bsg: ["62"], isTrungUongCu: false }] },
     { stt: "28", tenMoi: "Quảng Trị", isTrungUong: false, tinhCu: [{ ten: "Quảng Trị", bsg: ["74"], isTrungUongCu: false }, { ten: "Quảng Bình", bsg: ["73"], isTrungUongCu: false }] },
-    { stt: "29", tenMoi: "TP. Huế", isTrungUong: true, tinhCu: [{ ten: "Thừa Thiên Huế", bsg: ["75"], isTrungUongCu: true }] },
+    { stt: "29", tenMoi: "Huế", isTrungUong: true, tinhCu: [{ ten: "Huế", bsg: ["75"], isTrungUongCu: true }] },
     { stt: "30", tenMoi: "Quảng Ngãi", isTrungUong: false, tinhCu: [{ ten: "Quảng Ngãi", bsg: ["76"], isTrungUongCu: false }, { ten: "Kon Tum", bsg: ["82"], isTrungUongCu: false }] },
     { stt: "31", tenMoi: "Khánh Hòa", isTrungUong: false, tinhCu: [{ ten: "Khánh Hòa", bsg: ["79"], isTrungUongCu: false }, { ten: "Ninh Thuận", bsg: ["85"], isTrungUongCu: false }] },
     { stt: "32", tenMoi: "Gia Lai", isTrungUong: false, tinhCu: [{ ten: "Gia Lai", bsg: ["81"], isTrungUongCu: false }, { ten: "Bình Định", bsg: ["77"], isTrungUongCu: false }] },
