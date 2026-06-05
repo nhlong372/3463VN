@@ -167,11 +167,11 @@ function filterData() {
         }
         let tinhCuSubTags = "";
         if (item.tinhCu.length === 1 && item.tinhCu[0].ten === item.tenMoi) {
-          tinhCuSubTags = `Giữ Nguyên`;
+          tinhCuSubTags = `<span>Giữ Nguyên</span>`;
         } else {
           // Nếu là cụm sáp nhập nhiều tỉnh (hoặc đổi tên), hiển thị danh sách các tag cũ bình thường
           tinhCuSubTags = item.tinhCu
-            .map((tc) => `${tc.ten},`)
+            .map((tc) => `<span>${tc.ten}, </span>`)
             .join("");
         }
         const tatCaBienTrongCum = item.tinhCu.flatMap((tc) => tc.bsg);
@@ -182,7 +182,7 @@ function filterData() {
         tableBody.innerHTML += `
                         <tr>
                             <td class="col-stt" style="text-align: center; font-weight: bold; color: #888;">${item.stt}</td>
-                            <td class="col-name" data-label="Tên Tỉnh/Thành Mới:" style="font-weight: bold; color: #ff0000;">${item.tenMoi} (<span class="sub-tag-tinh-cu">${tinhCuSubTags}</span>)</td>
+                            <td class="col-name" data-label="Tên Tỉnh/Thành Mới:" style="font-weight: bold; color: #ff0000;">${item.tenMoi} <p class="sub-tag-tinh-cu">(${tinhCuSubTags})</p></td>
                             <td class="col-type" data-label="Phân Loại">${loaiHinh}</td>
                             <td class="col-map" data-label="Sáp Nhập Từ Các Tỉnh/Thành:">${tinhCuTags}</td>
                             <td class="col-plate" data-label="Biển Số Xe:">${bienSoTags}</td>
