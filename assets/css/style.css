@@ -4,7 +4,7 @@ body{background-color:#f0f4f8;color:#333;padding:20px;}
 h1{text-align:center;color:#0288d1;margin-bottom:5px;text-transform:uppercase;font-size:30px;}
 .subtitle{text-align:center;color:#666;margin-bottom:25px;font-style:italic;font-size:16px;}
 /* --- THANH CHUYỂN TAB GÓC NHÌN --- */
-.tabs-container{display:flex;justify-content:center;margin-bottom:25px;background:#eceff1;padding:5px;border-radius:30px;max-width:500px;margin-left:auto;margin-right:auto;}
+.tabs-container{display:flex;justify-content:center;margin-bottom:25px;background:#eceff1;padding:5px;border-radius:30px;max-width:600px;margin-left:auto;margin-right:auto;}
 .tab-btn{flex:1;padding:10px 20px;border:none;background:transparent;font-size:15px;font-weight:bold;color:#546e7a;cursor:pointer;border-radius:25px;transition:all 0.3s ease;text-align:center;}
 .tab-btn.active{background:#0288d1;color:white;box-shadow:0 2px 8px rgba(2,136,209,0.3);}
 /* --- KHUNG TÌM KIẾM --- */
