@@ -170,8 +170,9 @@ function filterData() {
           tinhCuSubTags = `<span>Giữ Nguyên</span>`;
         } else {
           // Nếu là cụm sáp nhập nhiều tỉnh (hoặc đổi tên), hiển thị danh sách các tag cũ bình thường
+          const danhSachCacTinhSapNhap = item.tinhCu.map(tc => tc.ten ? tc.ten.trim() : '').filter(Boolean);
           tinhCuSubTags = item.tinhCu
-            .map((tc) => `<span>${tc.ten}, </span>`)
+            .map((tc) => `<span>${danhSachCacTinhSapNhap.join(', ')}</span>`)
             .join("");
         }
         const tatCaBienTrongCum = item.tinhCu.flatMap((tc) => tc.bsg);
