@@ -189,7 +189,7 @@ function filterData() {
                     `;
       });
     }
-    rowCountDiv.innerText = `Hiển thị: ${filtered.length} / ${dbTinhThanh.length} địa phương mới`;
+    rowCountDiv.innerText = `Hiển thị: ${filtered.length} / ${dbTinhThanh.length} tỉnh thành mới`;
   } else {
     // --- XỬ LÝ CHO TAB 63 TỈNH CŨ ---
     tableHeader.innerHTML = `
@@ -198,7 +198,7 @@ function filterData() {
                     <th class="col-name" style="width: 250px;">Tên Tỉnh/Thành Cũ</th>
                     <th class="col-type" style="width: 150px;">Phân Loại</th>
                     <th class="col-map" style="width: 300px;">Nay Sáp Nhập Với</th>
-                    <th class="col-plate">Kí Hiệu Biển Số Xe</th>
+                    <th class="col-plate"><span class="split-word">Kí Hiệu</span> Biển Số Xe</th>
                 </tr>
             `;
 

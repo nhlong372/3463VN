@@ -9,8 +9,15 @@
 }
 /* 2. Cấu hình cho Điện thoại (Mobile) dưới 576px */
 @media screen and (max-width: 576px) {
-    .col-type{display: none;}
-    .tableBody{overflow-x: auto;}
-    .tableBody::-webkit-scrollbar{height: 5px; background-color: #e4eaef; border-radius: 5px;}
-    .tableBody::-webkit-scrollbar-thumb{background-color: #0288d1; border-radius: 5px;}
+  .col-type{display: none;}
+  .sub-tag-tinh-cu{display: block;}
+  .col-map{display: none;}
+  .subtitletab{display: none;}
+}
+@media screen and (max-width: 375px) {
+  h1{font-size:18px;}
+  .subtitle{font-size:15px;}
+  table.main-table{ overflow-x: auto; }
+  table.main-table::-webkit-scrollbar{height: 5px; background-color: #e4eaef; border-radius: 5px;}
+  table.main-table::-webkit-scrollbar-thumb{background-color: #0288d1; border-radius: 5px;}
 }

@@ -15,7 +15,7 @@ h1{text-align:center;color:#0288d1;margin-bottom:5px;text-transform:uppercase;fo
 .search-group input:focus,.search-group select:focus{border-color:#0288d1;box-shadow:0 0 5px rgba(2,136,209,0.3);}
 .stats{margin-bottom:15px;font-weight:bold;color:#555;font-size:14px;}
 /* --- BẢNG DỮ LIỆU --- */
-.table-container{overflow-x:auto;}
+.table-container{overflow:hidden;}
 table{width:100%;border-collapse:collapse;margin-top:5px;background:#fff;}
 tr{border-bottom:1px solid #e4eaef;}
 tr:last-child{border-bottom:none;}
@@ -31,5 +31,5 @@ tr:hover{background-color:#f9fbfd;}
 .tag-tinh-moi{background:#e3f2fd;color:#0d47a1;padding:4px 8px;border-radius:4px;font-weight:bold;display:inline-block;border:1px solid #90caf9;font-size:14px;}
 .tag-bien-so{background:#fff9c4;color:#f57f17;padding:2px 6px; border-radius:4px;font-weight:bold;display:inline-block;margin:2px;font-size:13px;border:1px solid #fff59d;}
 .no-result{text-align:center;padding:30px;color:#999;font-style:italic;}
-
-.sub-tag-tinh-cu{font-style: italic; font-size: 12px; color: #a0aec0;}
+.sub-tag-tinh-cu{font-style: italic; font-size: 12px; color: #a0aec0;display: none;}
+.subtitletab{display: block;}
