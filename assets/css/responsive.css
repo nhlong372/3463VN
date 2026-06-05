@@ -1,10 +1,11 @@
 /* --- CODE RESPONSIVE CHO CÁC THIẾT BỊ --- */
 /* 1. Cấu hình cho Máy tính bảng (Tablet) & Màn hình nhỏ hơn 768px */
 @media screen and (max-width:768px){
-  body{padding:10px;        /* Giảm padding viền ngoài cho rộng chỗ */}
+  body{padding:10px;}
   .container{padding:15px;}
-  h1{font-size:20px; /* Thu nhỏ tiêu đề */}
-  th,td{padding:10px 8px; /* Thu nhỏ khoảng cách các ô trong bảng */font-size:14px;}
+  h1{font-size:20px;}
+  th,td{padding:10px 8px;font-size:18px;}
+  .badge-tinh,.badge-tw{font-size:16px;}
 }
 /* 2. Cấu hình "Bá đạo" cho Điện thoại (Mobile) dưới 576px */
 /* Biến bảng Table dọc thành các thẻ Card bo góc dễ nhìn, không cần cuộn ngang */
