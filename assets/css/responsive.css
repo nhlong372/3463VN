@@ -4,12 +4,10 @@
   body{padding:10px;}
   .container{padding:15px;}
   h1{font-size:20px;}
-  th,td{padding:10px 8px;font-size:18px;}
-  .badge-tinh,.badge-tw{font-size:16px;}
+  th,td{padding:10px 8px;font-size:16px;}
+  .badge-tinh,.badge-tw{font-size:14px;}
 }
-/* 2. Cấu hình "Bá đạo" cho Điện thoại (Mobile) dưới 576px */
-/* Biến bảng Table dọc thành các thẻ Card bo góc dễ nhìn, không cần cuộn ngang */
-/* --- THIẾT KẾ LẠI GIAO DIỆN MOBILE SIÊU GỌN BAO QUÁT --- */
+/* 2. Cấu hình cho Điện thoại (Mobile) dưới 576px */
 @media screen and (max-width: 576px) {
-    
+    .col-type{display: none;}
 }

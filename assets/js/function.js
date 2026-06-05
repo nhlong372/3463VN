@@ -122,11 +122,11 @@ function filterData() {
     // --- XỬ LÝ CHO TAB 34 TỈNH MỚI ---
     tableHeader.innerHTML = `
                 <tr>
-                    <th style="width: 60px; text-align: center;">STT</th>
-                    <th style="width: 250px;">Tên Tỉnh/Thành Mới</th>
-                    <th style="width: 150px;">Phân Loại</th>
-                    <th>Sáp Nhập Từ Các Tỉnh/Thành</th>
-                    <th style="width: 250px;">Kí Hiệu Biển Số Xe</th>
+                    <th class="col-stt" style="width: 60px; text-align: center;">STT</th>
+                    <th class="col-name" style="width: 250px;">Tên Tỉnh/Thành Mới</th>
+                    <th class="col-type" style="width: 150px;">Phân Loại</th>
+                    <th class="col-map">Sáp Nhập Từ Các Tỉnh/Thành</th>
+                    <th class="col-plate" style="width: 250px;">Kí Hiệu Biển Số Xe</th>
                 </tr>
             `;
 
@@ -172,11 +172,11 @@ function filterData() {
 
         tableBody.innerHTML += `
                         <tr>
-                            <td style="text-align: center; font-weight: bold; color: #888;">${item.stt}</td>
-                            <td data-label="Tên Tỉnh/Thành Mới:" style="font-weight: bold; color: #ff0000;">${item.tenMoi}</td>
-                            <td data-label="Phân Loại">${loaiHinh}</td>
-                            <td data-label="Sáp Nhập Từ Các Tỉnh/Thành:">${tinhCuTags}</td>
-                            <td data-label="Biển Số Xe:">${bienSoTags}</td>
+                            <td class="col-stt" style="text-align: center; font-weight: bold; color: #888;">${item.stt}</td>
+                            <td class="col-name" data-label="Tên Tỉnh/Thành Mới:" style="font-weight: bold; color: #ff0000;">${item.tenMoi}</td>
+                            <td class="col-type" data-label="Phân Loại">${loaiHinh}</td>
+                            <td class="col-map" data-label="Sáp Nhập Từ Các Tỉnh/Thành:">${tinhCuTags}</td>
+                            <td class="col-plate" data-label="Biển Số Xe:">${bienSoTags}</td>
                         </tr>
                     `;
       });
@@ -186,11 +186,11 @@ function filterData() {
     // --- XỬ LÝ CHO TAB 63 TỈNH CŨ ---
     tableHeader.innerHTML = `
                 <tr>
-                    <th style="width: 60px; text-align: center;">STT</th>
-                    <th style="width: 250px;">Tên Tỉnh/Thành Cũ</th>
-                    <th style="width: 150px;">Phân Loại</th>
-                    <th style="width: 300px;">Nay Sáp Nhập Với</th>
-                    <th>Kí Hiệu Biển Số Xe</th>
+                    <th class="col-stt" style="width: 60px; text-align: center;">STT</th>
+                    <th class="col-name" style="width: 250px;">Tên Tỉnh/Thành Cũ</th>
+                    <th class="col-type" style="width: 150px;">Phân Loại</th>
+                    <th class="col-map" style="width: 300px;">Nay Sáp Nhập Với</th>
+                    <th class="col-plate">Kí Hiệu Biển Số Xe</th>
                 </tr>
             `;
 
@@ -231,11 +231,11 @@ function filterData() {
         }
         tableBody.innerHTML += `
                         <tr>
-                            <td style="text-align: center; font-weight: bold; color: #888;">${item.stt}</td>
-                            <td data-label="Tên Tỉnh/Thành Cũ:" style="font-weight: bold; color: #01579b;">${item.tenCu}</td>
-                            <td data-label="Phân Loại:">${loaiHinhGoc}</td>
-                            <td data-label="Nay Sáp Nhập Với:"><span class="tag-tinh-moi">${hienThiThuocVe}</span></td>
-                            <td data-label="Kí Hiệu Biển Số Xe:">${bienSoTags}</td>
+                            <td class="col-stt" style="text-align: center; font-weight: bold; color: #888;">${item.stt}</td>
+                            <td class="col-name" data-label="Tên Tỉnh/Thành Cũ:" style="font-weight: bold; color: #01579b;">${item.tenCu}</td>
+                            <td class="col-type" data-label="Phân Loại:">${loaiHinhGoc}</td>
+                            <td class="col-map" data-label="Nay Sáp Nhập Với:"><span class="tag-tinh-moi">${hienThiThuocVe}</span></td>
+                            <td class="col-plate" data-label="Kí Hiệu Biển Số Xe:">${bienSoTags}</td>
                         </tr>
                     `;
       });
