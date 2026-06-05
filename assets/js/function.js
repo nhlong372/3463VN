@@ -251,3 +251,34 @@ filterTypeSelect.addEventListener("change", filterData);
 
 // Chạy render mặc định khi mở trang
 switchMode("NEW");
+
+// Không cho nhập ký tự chữ và ký tự đặc biệt vào ô biển số xe
+var inputBox = document.getElementById("searchPlate");
+inputBox.addEventListener("keydown", function (e) {
+  // 1. Cho phép các phím điều hướng và xóa hoạt động bình thường
+  var allowableKeys = ["Backspace", "Delete", "ArrowLeft", "ArrowRight", "Tab"];
+  if (allowableKeys.includes(e.key)) {
+    return; // Thoát hàm, cho phép thực hiện
+  }
+
+  // 2. Kiểm tra nếu phím nhấn vào KHÔNG PHẢI là số từ 0-9 thì chặn lại
+  if (!/[0-9]/.test(e.key)) {
+    e.preventDefault();
+  }
+});
+
+// Không cho nhập ký tự số và ký tự đặc biệt vào ô tỉnh/thành phố
+var inputBox = document.getElementById("searchName");
+
+inputBox.addEventListener("keydown", function (e) {
+  // 1. Cho phép các phím chức năng/điều hướng hoạt động bình thường
+  var allowableKeys = ["Backspace", "Delete", "ArrowLeft", "ArrowRight", "Tab", " "]; // " " là phím khoảng trắng
+  if (allowableKeys.includes(e.key)) {
+    return; // Cho phép thực hiện, thoát khỏi hàm
+  }
+
+  // 2. Kiểm tra nếu phím vừa bấm KHÔNG PHẢI là chữ cái (bao gồm cả chữ có dấu tiếng Việt)
+  if (!/[a-zA-ZÀ-ỹ]/.test(e.key)) {
+    e.preventDefault(); // Chặn lại, không cho hiển thị ký tự đó
+  }
+});
