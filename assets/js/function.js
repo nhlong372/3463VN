@@ -167,10 +167,10 @@ function filterData() {
         }
         let tinhCuSubTags = "";
         if (item.tinhCu.length === 1 && item.tinhCu[0].ten === item.tenMoi) {
-          tinhCuTags = `<span class="mobile-sub-text sub-tag-tinh-cu" style="color: #a0aec0; font-style: italic;">Giữ Nguyên</span>`;
+          tinhCuSubTags = `<span class="mobile-sub-text sub-tag-tinh-cu" style="color: #a0aec0; font-style: italic;">Giữ Nguyên</span>`;
         } else {
           // Nếu là cụm sáp nhập nhiều tỉnh (hoặc đổi tên), hiển thị danh sách các tag cũ bình thường
-          tinhCuTags = item.tinhCu
+          tinhCuSubTags = item.tinhCu
             .map((tc) => `<span class="mobile-sub-text sub-tag-tinh-cu">${tc.ten}</span>`)
             .join("");
         }
