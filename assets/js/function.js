@@ -171,9 +171,7 @@ function filterData() {
         } else {
           // Nếu là cụm sáp nhập nhiều tỉnh (hoặc đổi tên), hiển thị danh sách các tag cũ bình thường
           const danhSachCacTinhSapNhap = item.tinhCu.map(tc => tc.ten ? tc.ten.trim() : '').filter(Boolean);
-          tinhCuSubTags = item.tinhCu
-            .map((tc) => `<span>${danhSachCacTinhSapNhap.join(', ')}</span>`)
-            .join("");
+          tinhCuSubTags = `<span>${danhSachCacTinhSapNhap.join(', ')}</span>`;
         }
         const tatCaBienTrongCum = item.tinhCu.flatMap((tc) => tc.bsg);
         const bienSoDaGop = gopBienSoTheoDay(tatCaBienTrongCum);
