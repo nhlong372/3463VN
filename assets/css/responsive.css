@@ -10,4 +10,7 @@
 /* 2. Cấu hình cho Điện thoại (Mobile) dưới 576px */
 @media screen and (max-width: 576px) {
     .col-type{display: none;}
+    .tableBody{overflow-x: auto;}
+    .tableBody::-webkit-scrollbar{height: 5px; background-color: #e4eaef; border-radius: 5px;}
+    .tableBody::-webkit-scrollbar-thumb{background-color: #0288d1; border-radius: 5px;}
 }
