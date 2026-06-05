@@ -1,11 +1,15 @@
 /* --- CODE RESPONSIVE CHO CÁC THIẾT BỊ --- */
 /* 1. Cấu hình cho Máy tính bảng (Tablet) & Màn hình nhỏ hơn 768px */
-@media screen and (max-width:768px){
+@media screen and (max-width: 800px) {
   body{padding:10px;}
   .container{padding:15px;}
   h1{font-size:20px;}
   th,td{padding:10px 8px;font-size:16px;}
   .badge-tinh,.badge-tw{font-size:14px;}
+  .split-word{display: none;}
+}
+@media screen and (max-width:768px){
+  
 }
 /* 2. Cấu hình cho Điện thoại (Mobile) dưới 576px */
 @media screen and (max-width: 576px) {

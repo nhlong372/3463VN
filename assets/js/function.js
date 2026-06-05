@@ -126,7 +126,7 @@ function filterData() {
                     <th class="col-name" style="width: 250px;">Tên Tỉnh/Thành Mới</th>
                     <th class="col-type" style="width: 150px;">Phân Loại</th>
                     <th class="col-map">Sáp Nhập Từ Các Tỉnh/Thành</th>
-                    <th class="col-plate" style="width: 250px;">Kí Hiệu Biển Số Xe</th>
+                    <th class="col-plate" style="width: 250px;"><span class="split-word">Kí Hiệu</span> Biển Số Xe</th>
                 </tr>
             `;
 
