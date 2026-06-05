@@ -215,6 +215,8 @@ function filterData() {
       tableBody.innerHTML = `<tr><td colspan="5" class="no-result">Không tìm thấy kết quả phù hợp!</td></tr>`;
     } else {
       filtered.forEach((item) => {
+        const bienSoTags = bienSoDaGop.map(bs => `<span class="tag-bien-so">${bs}</span>`).join(' ');
+        const loaiHinhGoc = item.isTrungUongGoc ? `<span class="badge-tw">Trực thuộc TW</span>` : `<span class="badge-tinh">Tỉnh</span>`;
         let hienThiThuocVe = "";
         if (
           item.tenCu === item.thuocTinhMoi ||
@@ -226,9 +228,6 @@ function filterData() {
           // Nếu có sự thay đổi sáp nhập thực sự, giữ nguyên tag màu xanh
           hienThiThuocVe = `${item.thuocTinhMoi}`;
         }
-        const bienSoTags = bienSoDaGop.map(bs => `<span class="tag-bien-so">${bs}</span>`).join(' ');
-        const loaiHinhGoc = item.isTrungUongGoc ? `<span class="badge-tw">Trực thuộc TW</span>` : `<span class="badge-tinh">Tỉnh</span>`;
-        
         tableBody.innerHTML += `
                         <tr>
                             <td style="text-align: center; font-weight: bold; color: #888;">${item.stt}</td>
