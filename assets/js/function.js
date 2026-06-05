@@ -28,6 +28,39 @@ function removeVietnameseTones(str) {
   return str.toLowerCase().trim();
 }
 
+// THUẬT TOÁN TỰ ĐỘNG NHÓM DÃY SỐ (TỪ 3 SỐ TRỞ LÊN MỚI GỘP)
+function gopBienSoTheoDay(mangBienSo) {
+  if (!mangBienSo || mangBienSo.length === 0) return [];
+  let numbers = mangBienSo.map(Number).sort((a, b) => a - b);
+  let ketQua = [];
+  let start = numbers[0];
+  let prev = numbers[0];
+
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] === prev + 1) {
+      prev = numbers[i];
+    } else {
+      if (prev - start >= 2) {
+        ketQua.push(`${start}-${prev}`);
+      } else if (prev - start === 1) {
+        ketQua.push(start.toString(), prev.toString());
+      } else {
+        ketQua.push(start.toString());
+      }
+      start = numbers[i];
+      prev = numbers[i];
+    }
+  }
+  if (prev - start >= 2) {
+    ketQua.push(`${start}-${prev}`);
+  } else if (prev - start === 1) {
+    ketQua.push(start.toString(), prev.toString());
+  } else {
+    ketQua.push(start.toString());
+  }
+  return ketQua;
+}
+
 // RÃ DỮ LIỆU 63 TỈNH GỐC
 function buildDanhSach63TinhCu() {
   let list = [];
@@ -133,12 +166,9 @@ function filterData() {
             .join("");
         }
         const tatCaBienTrongCum = item.tinhCu.flatMap((tc) => tc.bsg);
-        const bienSoTags = tatCaBienTrongCum
-          .map((bs) => `<span class="tag-bien-so">${bs}</span>`)
-          .join("");
-        const loaiHinh = item.isTrungUong
-          ? `<span class="badge-tw">Trực thuộc TW</span>`
-          : `<span class="badge-tinh">Tỉnh</span>`;
+        const bienSoDaGop = gopBienSoTheoDay(tatCaBienTrongCum);
+        const bienSoTags = bienSoDaGop.map(bs => `<span class="tag-bien-so">${bs}</span>`).join(' ');
+        const loaiHinh = item.isTrungUong ? `<span class="badge-tw">Trực thuộc TW</span>` : `<span class="badge-tinh">Tỉnh</span>`;
 
         tableBody.innerHTML += `
                         <tr>
@@ -185,12 +215,6 @@ function filterData() {
       tableBody.innerHTML = `<tr><td colspan="5" class="no-result">Không tìm thấy kết quả phù hợp!</td></tr>`;
     } else {
       filtered.forEach((item) => {
-        const bienSoTags = item.bienSoGoc
-          .map((bs) => `<span class="tag-bien-so">${bs}</span>`)
-          .join("");
-        const loaiHinhGoc = item.isTrungUongGoc
-          ? `<span class="badge-tw">Trực thuộc TW</span>`
-          : `<span class="badge-tinh">Tỉnh</span>`;
         let hienThiThuocVe = "";
         if (
           item.tenCu === item.thuocTinhMoi ||
@@ -202,6 +226,9 @@ function filterData() {
           // Nếu có sự thay đổi sáp nhập thực sự, giữ nguyên tag màu xanh
           hienThiThuocVe = `${item.thuocTinhMoi}`;
         }
+        const bienSoTags = bienSoDaGop.map(bs => `<span class="tag-bien-so">${bs}</span>`).join(' ');
+        const loaiHinhGoc = item.isTrungUongGoc ? `<span class="badge-tw">Trực thuộc TW</span>` : `<span class="badge-tinh">Tỉnh</span>`;
+        
         tableBody.innerHTML += `
                         <tr>
                             <td style="text-align: center; font-weight: bold; color: #888;">${item.stt}</td>
