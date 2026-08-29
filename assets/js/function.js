@@ -232,7 +232,8 @@ function filterData() {
           item.thuocTinhMoi.includes(item.tenCu)
         ) {
           // Nếu giữ nguyên, hiển thị dấu gạch ngang mờ hoặc chữ "Giữ nguyên" tùy bạn chọn
-          hienThiThuocVe = `<span style="color: #0d47a1; font-style: italic;"> Giữ nguyên</span>`;
+          //0d47a1 (mã màu cũ)
+          hienThiThuocVe = `<span style="color: #a0aec0; font-style: italic;"> Giữ nguyên</span>`;
         } else {
           // Nếu có sự thay đổi sáp nhập thực sự, giữ nguyên tag màu xanh
           hienThiThuocVe = `${item.thuocTinhMoi}`;
