@@ -6,7 +6,7 @@ Việt Nam 34/63: Tra Cứu Địa Giới & Biển Số Xe, Trợ Lý Tra Cứu 
 
 Chế độ "Hiện Tại (34 Tỉnh Mới)": Xem danh sách các tỉnh thành mới. Cột sáp nhập sẽ hiển thị các "mảnh ghép" tỉnh cũ cấu thành nên tỉnh mới đó, đi kèm tập hợp toàn bộ các đầu số biển số xe được gộp lại.
 
-Chế độ "Hoài Niệm (63 Tỉnh Cũ)": "Rã" ngược bản đồ về lại thời điểm trước khi sáp nhập. Giúp tra cứu chính xác một tỉnh cũ ngày xưa bây giờ đã thuộc về đâu, và hiển thị duy nhất ký hiệu biển số xe gốc của riêng tỉnh đó.
+Chế độ "Trước đây (63 Tỉnh Cũ)": "Rã" ngược bản đồ về lại thời điểm trước khi sáp nhập. Giúp tra cứu chính xác một tỉnh cũ ngày xưa bây giờ đã thuộc về đâu, và hiển thị duy nhất ký hiệu biển số xe gốc của riêng tỉnh đó.
 
 2. Hướng Dẫn Thao Tác Chi Tiết
 Bước 1: Chọn Chế độ Xem (Tab)
@@ -27,9 +27,9 @@ Mẹo: Thuật toán thông minh đã được cấu hình khớp chính xác c�
 
 Nhập 2 chữ số của biển số xe bạn cần tra (Ví dụ: 88, 51, 19).
 
-Hệ thống sẽ lọc ra ngay lập tức địa phương sở hữu đầu số đó ở chế độ bạn đang xem.
+Hệ thống sẽ lọc ra ngay lập tức địa phương sở hữu biển số đó ở chế độ bạn đang xem.
 
-Dropdown "Phân loại địa phương" (Chỉ mở ở Tab 34 Tỉnh Mới):
+Dropdown "Phân loại địa phương":
 
 Giúp bạn lọc nhanh để chỉ hiển thị các Thành phố Trực thuộc Trung ương (Hà Nội, TP.HCM, Hải Phòng...) hoặc các Tỉnh thông thường.
 
@@ -38,9 +38,9 @@ Giúp bạn lọc nhanh để chỉ hiển thị các Thành phố Trực thuộ
 
 💡 Ký hiệu — (Giữ nguyên) nghĩa là gì?
 
-Ở Tab Mới: Những tỉnh đứng độc lập, không ôm thêm tỉnh khác và giữ nguyên tên gọi (như Hà Nội, Thanh Hóa, Nghệ An...) thì cột sáp nhập sẽ hiện — (Giữ nguyên) thay vì lặp lại tên chính nó.
+Ở Tab Mới: Những tỉnh không sáp nhập với tỉnh khác và giữ nguyên tên gọi (như Hà Nội, Thanh Hóa, Nghệ An...) thì cột "Sáp Nhập Từ Các Tỉnh/Thành" sẽ hiện — (Giữ nguyên) thay vì lặp lại tên chính nó.
 
-Ở Tab Cũ: Những tỉnh cũ không bị sáp nhập đi đâu cả, vẫn giữ nguyên bờ cõi (như An Giang, Bạc Liêu...) thì cột "Hiện tại thuộc về" sẽ hiện — (Giữ nguyên).
+Ở Tab Cũ: Những tỉnh cũ không bị sáp nhập hoặc vẫn giữ nguyên tên gọi cũ (như An Giang, Bạc Liêu...) thì cột "Nay Sáp Nhập Với" sẽ hiện — (Giữ nguyên) thay vì lặp lại tên chính nó.
 
 4. Hiển Thị Trên Thiết Bị Di Động (Mobile/Tablet)
 Khi bạn xem trên màn hình máy tính bảng hoặc điện thoại, bảng dữ liệu nằm ngang sẽ tự động chuyển thành dạng các thẻ hộp (Card) dọc bo góc.
