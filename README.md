@@ -9,27 +9,27 @@ Việt Nam 34/63: Tra Cứu Địa Giới & Biển Số Xe, Trợ Lý Tra Cứu 
   Chế độ "Trước đây (63 Tỉnh Cũ)": "Rã" ngược bản đồ về lại thời điểm trước khi sáp nhập. Giúp tra cứu chính xác một tỉnh cũ ngày xưa bây giờ đã thuộc về đâu, và hiển thị duy nhất ký hiệu biển số xe gốc của riêng tỉnh đó.
 
 2. Hướng Dẫn Thao Tác Chi Tiết
-  Bước 1: Chọn Chế độ Xem (Tab)
+  - Bước 1: Chọn Chế độ Xem (Tab)
     Ngay đầu trang, bạn sẽ thấy thanh chuyển đổi gồm 2 nút: [Hiện Tại (34 Tỉnh Mới)] và [Trước Đây (63 Tỉnh Cũ)].
     
     Hãy bấm vào Tab tương ứng với nhu cầu tra cứu của bạn. Giao diện bảng (Table) bên dưới sẽ tự động thay đổi cấu trúc cột phù hợp.
   
-  Bước 2: Sử dụng các Bộ lọc tìm kiếm
+  - Bước 2: Sử dụng các Bộ lọc tìm kiếm
     Hệ thống hỗ trợ tìm kiếm theo thời gian thực (gõ đến đâu lọc đến đấy, không cần bấm nút Tìm):
     
-    + Ô "Tìm kiếm theo tên tỉnh":
+    * Ô "Tìm kiếm theo tên tỉnh":
     
       Bạn có thể gõ tiếng Việt có dấu hoặc không dấu (Ví dụ: gõ hai phong hoặc Hải Phòng đều được).
       
       Mẹo: Thuật toán thông minh đã được cấu hình khớp chính xác cụm từ, bạn không lo bị hiện tượng gõ chữ "Hải" mà ra nhầm "Thái Bình" hay "Thái Nguyên".
     
-    + Ô "Tìm theo ký hiệu Biển số xe":
+    * Ô "Tìm theo ký hiệu Biển số xe":
     
       Nhập 2 chữ số của biển số xe bạn cần tra (Ví dụ: 88, 51, 19).
       
       Hệ thống sẽ lọc ra ngay lập tức địa phương sở hữu biển số đó ở chế độ bạn đang xem.
     
-    + Dropdown "Phân loại địa phương":
+    * Dropdown "Phân loại địa phương":
     
       Giúp bạn lọc nhanh để chỉ hiển thị các Thành phố Trực thuộc Trung ương (Hà Nội, TP.HCM, Hải Phòng...) hoặc các Tỉnh thông thường.
 
