@@ -176,7 +176,7 @@ function filterData() {
         const tatCaBienTrongCum = item.tinhCu.flatMap((tc) => tc.bsg);
         const bienSoDaGop = gopBienSoTheoDay(tatCaBienTrongCum);
         const bienSoTags = bienSoDaGop.map(bs => `<span class="tag-bien-so">${bs}</span>`).join(' ');
-        const loaiHinh = item.isTrungUong ? `<span class="badge-tw">Trực thuộc TW</span>` : `<span class="badge-tinh">Tỉnh</span>`;
+        const loaiHinh = item.isTrungUong ? `<span class="badge-tw">Trực thuộc TƯ</span>` : `<span class="badge-tinh">Tỉnh</span>`;
 
         tableBody.innerHTML += `
                         <tr>
@@ -225,7 +225,7 @@ function filterData() {
       filtered.forEach((item) => {
         const bienSoDaGop = gopBienSoTheoDay(item.bienSoGoc);
         const bienSoTags = bienSoDaGop.map(bs => `<span class="tag-bien-so">${bs}</span>`).join(' ');
-        const loaiHinhGoc = item.isTrungUongGoc ? `<span class="badge-tw">Trực thuộc TW</span>` : `<span class="badge-tinh">Tỉnh</span>`;
+        const loaiHinhGoc = item.isTrungUongGoc ? `<span class="badge-tw">Trực thuộc TƯ</span>` : `<span class="badge-tinh">Tỉnh</span>`;
         let hienThiThuocVe = "";
         if (
           item.tenCu === item.thuocTinhMoi ||
